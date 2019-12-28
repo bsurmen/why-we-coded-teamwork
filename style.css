@@ -1,4 +1,11 @@
 *{ /*---please remain empty--*/ }
+body{
+  width: 100%;
+}
+img, video, table, audio {
+  width:%100; 
+  max-width:100%;
+}
 
 /*--Abdulrahman Start--*/
 /*--Abdulrahman End--*/
@@ -11,3 +18,7 @@
 
 /*--Oktay Start--*/
 /*--Oktay End--*/
+
+@media only screen and (max-width: 800px){
+
+}
