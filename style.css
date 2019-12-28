@@ -1,10 +1,16 @@
-*{ /*---please remain empty--*/ }
-body{
+/* * {
+  please remain empty
+}*/
+
+body {
   width: 100%;
 }
-img, video, table, audio {
-  width:%100; 
-  max-width:100%;
+img,
+video,
+table,
+audio {
+  width: 100%;
+  max-width: 100%;
 }
 
 /*--Abdulrahman Start--*/
@@ -19,17 +25,16 @@ img, video, table, audio {
 /*--Oktay Start--*/
 /*--Oktay End--*/
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
   /*--Abdulrahman Start--*/
-/*--Abdulrahman End--*/
+  /*--Abdulrahman End--*/
 
-/*--Burak Start--*/
-/*--Burak End--*/
+  /*--Burak Start--*/
+  /*--Burak End--*/
 
-/*--Mustafa Start--*/
-/*--Mustafa End--*/
+  /*--Mustafa Start--*/
+  /*--Mustafa End--*/
 
-/*--Oktay Start--*/
-/*--Oktay End--*/
-
+  /*--Oktay Start--*/
+  /*--Oktay End--*/
 }
