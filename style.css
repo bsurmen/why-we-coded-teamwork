@@ -1,9 +1,28 @@
+/* Added by @adlogi to get the right fonts */
+@import url(http://fonts.googleapis.com/css?family=Merienda+One);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
+
+/* Added by @adlogi to use border-box model */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
 /* * {
   please remain empty
 }*/
 
+
 body {
   width: 100%;
+  margin: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 img,
@@ -12,10 +31,156 @@ table,
 audio {
   width: 100%;
   max-width: 100%;
-
 }
 
 /*--Abdulrahman Start--*/
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+#logo h1 {
+  float: left;
+  margin: 0em;
+  font-size: 28px;
+}
+
+#logo:link {
+  font-family: 'Merienda One', cursive;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 80px;
+  color: white;
+}
+
+#logo h1:hover {
+  background-color: #4FC67F;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3A3C42;
+}
+
+nav ul {
+  margin: 0;
+  display: block;
+  float: right;
+}
+
+nav li {
+  float: left;
+  list-style: none;
+  padding: 20px;
+  line-height: 2.8em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+nav li a:hover {
+  border-bottom: 3px solid #4FC67F;
+}
+
+header {
+  width: 100%;
+  color: white;
+  background-image: url(./img/sample_background3.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center;
+  background-color: #393B42;
+  text-align: center;
+  padding: 150px 0;
+  margin-top: 80px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 8em;
+  margin: 0;
+}
+
+header p {
+  font-size: 21px;
+  font-weight: 200;
+}
+
+img.founders {
+  width: 75px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sec-1 {
+  background-image: url(./img/icons_bck.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #4FC67F;
+  padding: 75px;
+  color: white;
+}
+
+#sec-1 h2 {
+  font-size: 1.5em;
+}
+
+#sec-1 div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#sec-1 img {
+  height: 60px;
+}
+
+#sec-1 p {
+  padding: 20px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.green {
+  color: #4FC67F;
+}
+
+.button {
+  background-color: #4FC67F;
+  width: 12em;
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  text-decoration: none;
+  transition: background-color 0.7s ease;
+}
+
+.button a:link,
+.button a:visited
+{
+  color: white;
+  text-decoration: none;
+}
+.button:hover {
+  text-decoration: none;
+  background-color: #3275B1;
+}
+
 /*--Abdulrahman End--*/
 
 /*--Burak Start--*/
@@ -25,6 +190,7 @@ audio {
   height: 100%;
   background-color: #f1f4f5;
   padding: 3% 0;
+  position: relative; /* added by adlogi to fix the position of div.img */
 }
 
 /*-----Upper Part----*/
