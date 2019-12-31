@@ -27,7 +27,30 @@
             <li><a href="http://">Contact</a></li>
             <li><a href="http://">Subpage <i class="fas fa-external-link-alt"></i></a></li>
           </ul>
-        </div> <!-- .menu-->
+        </div> <!-- #menu-->
+
+        <!--    Modified from https://codepen.io/erikterwan/pen/EVzeRP by Erik Terwan    -->
+        <div id="menuToggle">
+          <!--
+            A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <ul id="hamburger">
+            <li><a href="http://">Home</a></li>
+            <li><a href="http://">Services</a></li>
+            <li><a href="http://">Introduction</a></li>
+            <li><a href="http://">Main</a></li>
+            <li><a href="http://">Team</a></li>
+            <li><a href="http://">Contact</a></li>
+            <li><a href="http://">Subpage <i class="fas fa-external-link-alt"></i></a></li>
+          </ul>
+        </div> <!-- #hamburger -->
+
       </div> <!-- .wrapper -->
     </nav>
 
@@ -41,22 +64,22 @@
     </header>
     
     <section id="sec-1">
-      <div class="wrapper flex-between">
-        <div>
+      <div class="wrapper group">
+        <div class="col">
           <div>
             <i class="fab fa-android fa-4x"></i>
           </div>
           <h2>Mobile Development</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab dolore, quo distinctio est minima quibusdam quas cum deserunt quia iure omnis.</p>
         </div>
-        <div>
+        <div class="col">
           <div>
             <i class="fab fa-github fa-4x"></i>
           </div>
           <h2>CMS Development</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium quam culpa ex impedit neque numquam consequatur hic in officiis.</p>
         </div>
-        <div>
+        <div class="col">
           <div>
             <i class="fas fa-code fa-4x"></i>
           </div>
@@ -71,6 +94,7 @@
 
         <!--Burak Start-->
         <section id="wlove">
+          <div class="wrapper">
           <div class="upper">
             <h2 id="htex">We do <span> what we love</span></h2>
             <p>
@@ -119,6 +143,7 @@
           <div class="img">
               <img id="ipad" src="./img/ipad.png" alt="ipad-image" />
             </div>
+          </div>
         </section>
       <!--Burak End-->
   

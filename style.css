@@ -40,6 +40,12 @@ audio {
   margin: 0 auto;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #logo h1 {
   float: left;
   margin: 0em;
@@ -64,30 +70,39 @@ nav {
   top: 0;
   left: 0;
   background-color: #3A3C42;
+  z-index: 10;
 }
 
-nav ul {
+#menu ul {
   margin: 0;
   display: block;
   float: right;
 }
 
-nav li {
+#menu li {
   float: left;
   list-style: none;
   padding: 20px;
   line-height: 2.8em;
 }
 
-nav li a {
+#menu li a {
   color: white;
   text-decoration: none;
   font-size: 16px;
   padding-bottom: 5px;
 }
 
-nav li a:hover {
+#menu li a:hover {
   border-bottom: 3px solid #4FC67F;
+}
+
+#menuToggle {
+  display: none;
+}
+
+#hamburger {
+  display: none;
 }
 
 header {
@@ -96,7 +111,7 @@ header {
   background-image: url(./img/sample_background3.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-color: #393B42;
   text-align: center;
@@ -126,14 +141,21 @@ img.founders {
   justify-content: space-between;
 }
 
+.col {
+  width: 33.333%;
+  float: left;
+}
+
 #sec-1 {
   background-image: url(./img/icons_bck.png);
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center;
   background-color: #4FC67F;
-  padding: 75px;
   color: white;
+  width: 100%;
+  margin: 0;
+  padding: 100px 0;
 }
 
 #sec-1 h2 {
@@ -150,7 +172,7 @@ img.founders {
 }
 
 #sec-1 p {
-  padding: 20px;
+  padding: 15px;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -312,9 +334,6 @@ width: 12.5%;
   line-height: 30px;
 }
 
-
-
-
 .social{
  
  display: flex;
@@ -332,8 +351,6 @@ width: 12.5%;
   justify-content: space-around;
   width: 100%;
   margin: 1% auto;
-  
-  
 }
 
 .form-box{
@@ -395,7 +412,154 @@ footer a{
 /*--Oktay End--*/
 
 @media only screen and (max-width: 800px) {
+
   /*--Abdulrahman Start--*/
+
+  #menu {
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  /* beginning of hamburger menu */
+  /* Modified from https://codepen.io/erikterwan/pen/EVzeRP by Erik Terwan */
+  #menuToggle
+  {
+    display: block;
+    float:right;
+    position: relative;
+    top: 28px;
+    
+    z-index: 11;
+    
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #3A3C42;
+  }
+
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0;
+    z-index: 12;
+    
+    -webkit-touch-callout: none;
+  }
+
+  /* Just a quick hamburger */
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #4FC67F;
+    border-radius: 3px;
+    
+    z-index: 11;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+
+  /* Transform all the slices of hamburger into a crossmark. */
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #3A3C42;
+  }
+
+  /* But let's hide the middle one. */
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /* Ohyeah and the last one should go the other direction */
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /* Make this absolute positioned at the top right of the screen */
+  #hamburger
+  {
+    position: absolute;
+    right: -120px;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: white;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #hamburger li a
+  {
+    padding: 5px 0;
+    line-height: 2.8em;
+    font-size: 16px;
+
+    transition: border-bottom 0.3s ease;
+  }
+
+  #hamburger li a:hover {
+    border-bottom: 3px solid #4FC67F;
+  }
+
+  /* And let's slide it in from the right. */
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+
+  /* end of hamburger menu */
+
+  .col {
+    width: 100%;
+    float: none;
+  }
+
+
   /*--Abdulrahman End--*/
 
   /*--Burak Start--*/
