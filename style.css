@@ -40,6 +40,12 @@ audio {
   margin: 0 auto;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #logo h1 {
   float: left;
   margin: 0em;
@@ -64,6 +70,7 @@ nav {
   top: 0;
   left: 0;
   background-color: #3A3C42;
+  z-index: 10;
 }
 
 nav ul {
@@ -126,14 +133,21 @@ img.founders {
   justify-content: space-between;
 }
 
+.col {
+  width: 33.333%;
+  float: left;
+}
+
 #sec-1 {
   background-image: url(./img/icons_bck.png);
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center;
   background-color: #4FC67F;
-  padding: 75px;
   color: white;
+  width: 100%;
+  margin: 0;
+  padding: 100px 0;
 }
 
 #sec-1 h2 {
@@ -150,7 +164,7 @@ img.founders {
 }
 
 #sec-1 p {
-  padding: 20px;
+  padding: 15px;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -396,6 +410,13 @@ footer a{
 
 @media only screen and (max-width: 800px) {
   /*--Abdulrahman Start--*/
+
+  .col {
+    width: 100%;
+    float: none;
+  }
+
+
   /*--Abdulrahman End--*/
 
   /*--Burak Start--*/
