@@ -1,6 +1,9 @@
 /* Added by @adlogi to get the right fonts */
 @import url(http://fonts.googleapis.com/css?family=Merienda+One);
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
+@import url(
+  http://fonts.googleapis.com/css?family=Playfair+Display:400,
+  400italic
+);
 
 /* Added by @adlogi to use border-box model */
 html {
@@ -8,21 +11,23 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
-  }
+}
 
 /* * {
   please remain empty
 }*/
 
-
 body {
   width: 100%;
   margin: 0;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
 }
 
 img,
@@ -53,7 +58,7 @@ audio {
 }
 
 #logo:link {
-  font-family: 'Merienda One', cursive;
+  font-family: "Merienda One", cursive;
   font-size: 28px;
   font-weight: 600;
   line-height: 80px;
@@ -61,7 +66,7 @@ audio {
 }
 
 #logo h1:hover {
-  background-color: #4FC67F;
+  background-color: #4fc67f;
 }
 
 nav {
@@ -69,7 +74,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #3A3C42;
+  background-color: #3a3c42;
   z-index: 10;
 }
 
@@ -94,7 +99,7 @@ nav {
 }
 
 #menu li a:hover {
-  border-bottom: 3px solid #4FC67F;
+  border-bottom: 3px solid #4fc67f;
 }
 
 #menuToggle {
@@ -113,7 +118,7 @@ header {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-color: #393B42;
+  background-color: #393b42;
   text-align: center;
   padding: 150px 0;
   margin-top: 80px;
@@ -151,7 +156,7 @@ img.founders {
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: center;
-  background-color: #4FC67F;
+  background-color: #4fc67f;
   color: white;
   width: 100%;
   margin: 0;
@@ -178,11 +183,11 @@ img.founders {
 }
 
 .green {
-  color: #4FC67F;
+  color: #4fc67f;
 }
 
 .button {
-  background-color: #4FC67F;
+  background-color: #4fc67f;
   width: 12em;
   font-size: 1.2em;
   border-radius: 5px;
@@ -193,14 +198,13 @@ img.founders {
 }
 
 .button a:link,
-.button a:visited
-{
+.button a:visited {
   color: white;
   text-decoration: none;
 }
 .button:hover {
   text-decoration: none;
-  background-color: #3275B1;
+  background-color: #3275b1;
 }
 
 /*--Abdulrahman End--*/
@@ -289,7 +293,7 @@ img.founders {
 
 .img {
   position: absolute;
-  left: 550px;
+  left: 590px;
   top: 290px;
 }
 
@@ -299,110 +303,97 @@ img.founders {
 /*--Burak End--*/
 
 /*--Mustafa Start--*/
-.img-icon{
+.img-icon {
   width: 50px;
   height: 50px;
 }
-.container{
+.container {
   width: 80%;
   margin: 0 auto;
 }
-section .flex-container{
+section .flex-container {
   display: flex;
 }
-.left-side-columns{
+.left-side-columns {
   display: flex;
-
 }
-.left-side{margin-right: 35px}
-.left-side h1{
+.left-side {
+  margin-right: 35px;
+}
+.left-side h1 {
   font-size: 60px;
   margin-bottom: 0;
 }
-.left-side p{
-  color: #505050
+.left-side p {
+  color: #505050;
 }
-.left-side-columns h2{
+.left-side-columns h2 {
   color: #202020;
   font-size: 20px;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
-.right-side h1 span{
- font-weight: lighter;
+.right-side h1 span {
+  font-weight: lighter;
 }
-.right-side-cpation{
+.right-side-cpation {
   background-color: #4fc680;
-    display: flex;
-    color: #fff;
-    width: 75%;
-    padding: 10px 30px;
+  display: flex;
+  color: #fff;
+  width: 75%;
+  padding: 10px 30px;
 }
-.right-side-cpation img{
-    width: 150px;
-    height: 150px;
+.right-side-cpation img {
+  width: 150px;
+  height: 150px;
 }
- /*
+/*
 
  */
 
- .meet-the-team{
+.meet-the-team {
   padding: 30px 0;
   background-color: #c9e7de;
   text-align: center;
 }
- .meet-the-team .container{
+.meet-the-team .container {
   width: 75%;
   margin: 0 auto;
- }
- .meet-the-team h1{
+}
+.meet-the-team h1 {
   font-size: 50px;
   margin-bottom: 0;
   color: #202020;
- }
- .meet-the-team h1 span{
- font-weight: lighter;
 }
- .meet-the-team p{
+.meet-the-team h1 span {
+  font-weight: lighter;
+}
+.meet-the-team p {
   font-size: 20px;
- }
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /*--Mustafa End--*/
 
 /*--Oktay Start--*/
 
-.pics{
+.pics {
   background: #333333;
   display: flex;
   justify-content: space-between;
   padding: 3% 0;
   margin: 0;
-  
 }
 
-.pics img{
-width: 12.5%;
-
+.pics img {
+  width: 12.5%;
 }
 
-.green-box{
+.green-box {
   background: rgb(98, 198, 128);
   padding: 5% 0;
   color: white;
-  
 }
 
-.green-box-top{
+.green-box-top {
   border-bottom: 1px solid white;
   display: flex;
   justify-content: space-between;
@@ -412,64 +403,59 @@ width: 12.5%;
   line-height: 30px;
 }
 
-.social{
- 
- display: flex;
- justify-content: flex-end;
- align-items: baseline;
- 
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
 }
-.stay-connect{
+.stay-connect {
   width: 50%;
   margin-right: 30%;
 }
-.green-box-bottom{
-  
+.green-box-bottom {
   display: flex;
   justify-content: space-around;
   width: 100%;
   margin: 1% auto;
 }
 
-.form-box{
+.form-box {
   width: 50%;
 }
-.form-box label{
+.form-box label {
   width: 100%;
-  
 }
 
-.form-box input{
+.form-box input {
   width: 90%;
   padding: 1.5%;
   margin: 1% 0;
 }
 
-.form-box input[id="message"]{
+.form-box input[id="message"] {
   padding: 10% 0%;
 }
-.form-box input[type="button"]{
+.form-box input[type="button"] {
   width: 15%;
   font-size: 26px;
-
 }
-.maps-area img{
+.maps-area img {
   padding-bottom: 5%;
 
   border-bottom: 1px solid white;
 }
 
-.maps-area a{
+.maps-area a {
   color: black;
   text-decoration: none;
 }
 
-.maps-area p{
+.maps-area p {
   margin: 2% 0;
   line-height: 20px;
 }
 
-footer{
+footer {
   background: #333333;
   padding: 10%;
   color: darkgrey;
@@ -478,19 +464,17 @@ footer{
   justify-content: space-between;
 }
 
-footer a{
+footer a {
   color: rgb(98, 198, 128);
   text-decoration: none;
 }
 
-.right-area{
-
+.right-area {
   margin-right: 20%;
 }
 /*--Oktay End--*/
 
 @media only screen and (max-width: 800px) {
-
   /*--Abdulrahman Start--*/
 
   #menu {
@@ -503,116 +487,104 @@ footer a{
 
   /* beginning of hamburger menu */
   /* Modified from https://codepen.io/erikterwan/pen/EVzeRP by Erik Terwan */
-  #menuToggle
-  {
+  #menuToggle {
     display: block;
-    float:right;
+    float: right;
     position: relative;
     top: 28px;
-    
+
     z-index: 11;
-    
+
     -webkit-user-select: none;
     user-select: none;
   }
 
-  #menuToggle a
-  {
+  #menuToggle a {
     text-decoration: none;
-    color: #3A3C42;
+    color: #3a3c42;
   }
 
-  #menuToggle input
-  {
+  #menuToggle input {
     display: block;
     width: 40px;
     height: 32px;
     position: absolute;
     top: -7px;
     left: -5px;
-    
+
     cursor: pointer;
-    
+
     opacity: 0;
     z-index: 12;
-    
+
     -webkit-touch-callout: none;
   }
 
   /* Just a quick hamburger */
-  #menuToggle span
-  {
+  #menuToggle span {
     display: block;
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    
-    background: #4FC67F;
+
+    background: #4fc67f;
     border-radius: 3px;
-    
+
     z-index: 11;
-    
+
     transform-origin: 4px 0px;
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
 
-  #menuToggle span:first-child
-  {
+  #menuToggle span:first-child {
     transform-origin: 0% 0%;
   }
 
-  #menuToggle span:nth-last-child(2)
-  {
+  #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
 
   /* Transform all the slices of hamburger into a crossmark. */
-  #menuToggle input:checked ~ span
-  {
+  #menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #3A3C42;
+    background: #3a3c42;
   }
 
   /* But let's hide the middle one. */
-  #menuToggle input:checked ~ span:nth-last-child(3)
-  {
+  #menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
   /* Ohyeah and the last one should go the other direction */
-  #menuToggle input:checked ~ span:nth-last-child(2)
-  {
+  #menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
   /* Make this absolute positioned at the top right of the screen */
-  #hamburger
-  {
+  #hamburger {
     position: absolute;
     right: -120px;
     width: 300px;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    
+
     background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
-    
+
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
-    
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
-  #hamburger li a
-  {
+  #hamburger li a {
     padding: 5px 0;
     line-height: 2.8em;
     font-size: 16px;
@@ -621,12 +593,11 @@ footer a{
   }
 
   #hamburger li a:hover {
-    border-bottom: 3px solid #4FC67F;
+    border-bottom: 3px solid #4fc67f;
   }
 
   /* And let's slide it in from the right. */
-  #menuToggle input:checked ~ ul
-  {
+  #menuToggle input:checked ~ ul {
     transform: none;
   }
 
@@ -636,7 +607,6 @@ footer a{
     width: 100%;
     float: none;
   }
-
 
   /*--Abdulrahman End--*/
 
@@ -678,16 +648,16 @@ footer a{
   /*--Burak End--*/
 
   /*--Mustafa Start--*/
-section .flex-container,
-  .left-side-columns{
+  section .flex-container,
+  .left-side-columns {
     flex-direction: column;
   }
   .left-side h1,
-  .meet-the-team h1{
-  font-size: 30px;
+  .meet-the-team h1 {
+    font-size: 30px;
   }
-  .right-side-cpation{
-    margin-bottom: 40px
+  .right-side-cpation {
+    margin-bottom: 40px;
   }
   /*--Mustafa End--*/
 
